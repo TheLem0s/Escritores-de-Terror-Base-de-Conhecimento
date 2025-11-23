@@ -34,8 +34,9 @@ function renderizarCards(dados) {
         article.classList.add("card");
         article.innerHTML = `
         <h2>${dado.nome}</h2>
+        <p>${dado.ano}</p>
         <p>${dado.descricao}</p>
-        <p><strong>Fonte:</strong> ${dado.fonte}</p>
+         <a href="${dado.link}" target="_blank">Saiba mais</a>
     `;
         cardContainer.appendChild(article);
 
